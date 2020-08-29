@@ -20,6 +20,30 @@ public class ArrayTools {
 			}
 		}
 	}
+	/**
+	 * @description:选择排序从前到后每次确定一个元素的位置,每循环一次才进行交换
+	 * @author pengpeng
+	 * @date 2020/8/29
+	 * @param arr
+	 * @return void
+	*/
+	public static void selectSort2(int[] arr) {
+		for(int i = 0; i <arr.length - 1; i++) {
+			int index = i;
+			int temp = arr[i];
+			for(int j = i + 1; j < arr.length ; j++) {
+				if(temp > arr[j]) {
+					temp = arr[j];
+					index = j;
+				}
+			}
+			if(index != i) {
+				int tempValue = arr[i];
+				arr[i] = temp;
+				arr[index] = tempValue;
+			}
+		}
+	}
 
 	/**
 	 * @description:打印数组

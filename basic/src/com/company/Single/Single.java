@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Single;
 
 public class Single {
     public static void main(String args[]) {
