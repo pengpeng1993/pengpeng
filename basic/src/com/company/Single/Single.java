@@ -27,7 +27,11 @@ class SingleDemo2 {
     private static SingleDemo2 s = null;
     public static SingleDemo2 getInstance() {
         if(s == null) {
-            s = new SingleDemo2();
+            synchronized (Single.class) {
+                if(s == null) {
+                    s = new SingleDemo2();
+                }
+            }
         }
         return s;
     }
