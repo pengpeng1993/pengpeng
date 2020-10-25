@@ -3,6 +3,7 @@ package com.company.io;
 import java.io.*;
 import java.util.Properties;
 import java.util.Vector;
+import java.util.Hashset
 
 public class SplitFileDemo {
 
@@ -13,6 +14,7 @@ public class SplitFileDemo {
 
         File file = new File("C:\\test");
         mergeFile2(file);
+        HashSet h = new HashSet();
     }
     /*
     *对给定文件按指定大小进行切割

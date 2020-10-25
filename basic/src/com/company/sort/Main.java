@@ -9,6 +9,7 @@ public class Main {
 		ArrayTools.selectSort2(arr);
 		//System.out.println(ArrayTools.halfSearch(arr, 91));
 		ArrayTools.printArray(arr);
+		Has
 		final Object obj = new Object();
 	}
 }
